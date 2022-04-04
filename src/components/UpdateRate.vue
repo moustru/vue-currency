@@ -2,7 +2,7 @@
 	<div>
 		<div v-if="autoUpdate">
 			Следующее обновление курса валют через
-			<span class="bold-large-text">{{ `${Math.floor(time / 60)}:${ time - 60 >= 0 ? '00' : time }` }}</span>
+			<span class="bold-large-text">{{ time }}</span>
 		</div>
 		<div v-else>Обновление курса отключено</div>
 		<button
